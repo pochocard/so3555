@@ -1,0 +1,586 @@
+amarillo = #ffed00
+amarillo_oscuro = #dccc00
+gris = #4b4b4a
+gris_claro_numero = #9ba0a3
+gris_claro = #d0d0d0
+rojo = #c20e1a
+verde = #C0D860
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?cxyv75');
+	src:url('../fonts/icomoon.eot?#iefixcxyv75') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?cxyv75') format('truetype'),
+		url('../fonts/icomoon.woff?cxyv75') format('woff'),
+		url('../fonts/icomoon.svg?cxyv75#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube-with-circle:before {
+	content: "\e602";
+}
+.icon-twitter-with-circle:before {
+	content: "\e603";
+}
+.icon-linkedin-with-circle:before {
+	content: "\e605";
+}
+.icon-instagram-with-circle:before {
+	content: "\e606";
+}
+.icon-google-with-circle:before {
+	content: "\e607";
+}
+.icon-facebook-with-circle:before {
+	content: "\e608";
+}
+.icon-skype-with-circle:before {
+	content: "\e609";
+}
+.icon-phone:before {
+	content: "\e600";
+}
+.icon-bubble2:before {
+	content: "\e96e";
+}
+.icon-location-on:before {
+	content: "\e604";
+}
+.icon-phone-in-talk:before {
+	content: "\e611";
+}
+.icon-keyboard-arrow-right:before {
+	content: "\e601";
+}
+
+body
+	background-color white
+	
+	// TOP //
+				
+	.logo_mobile
+		
+		background amarillo
+		text-align center
+		
+		img
+			margin 1em 0
+			max-width 180px
+
+	.top
+		// background-color rgba(amarillo, 0.8)
+		height 140px
+		position fixed
+		width 100%
+		z-index 4
+			
+		.top_styles
+			width 80%
+			margin 0 10%
+			position absolute
+			z-index 3
+		
+			.logo
+				display inline-block
+				
+				img
+					max-width 80px
+					
+			.logo_so3555
+				display inline-block
+				
+				h1
+					color gris
+					font-family 'Roboto Slab', serif
+					font-size 4em
+					font-weight 700
+					margin 0 0 0 0.5em
+					
+			.menu
+				display inline-block
+				margin-top 4.75em
+					
+				nav
+					#activo
+						border-bottom 5px solid gris
+						padding-bottom 0.4em
+					
+					ul
+						font-family 'Roboto Slab', serif
+						font-weight 300
+						font-size 0.9em
+						
+						li
+							display inline-block
+							list-style-type none
+							margin-left 1em
+							margin-right 1em
+							
+							a
+								color black
+								
+							a:hover
+								border-bottom 5px solid gris
+								padding-bottom 0.4em
+					
+		// TOP BARRAS //
+					
+		.barras_fondo
+			overflow hidden
+			position relative
+			z-index 2
+			
+			opacity 0.9
+			// -webkit-filter: blur(10px);
+			// -moz-filter: blur(10px);
+			// -o-filter: blur(10px);
+			// -ms-filter: blur(10px);
+			// filter: blur(10px);
+		
+			.barra_amarilla
+				background-color amarillo
+				height 35px
+				
+			.barra_blanca
+				background-color white
+				height 35px
+				
+	.espacio_top
+		background-color white
+		height 140px
+		
+	// SLIDER //
+				
+	.link_explorar
+		// background-color amarillo
+		// box-shadow 0 0 2em black
+		list-style none
+		// opacity 0.9
+		// padding 0.6em 1.5em 0.8em 1.5em
+		position absolute
+		text-align center
+		text-shadow 1px 1px black
+		left 20%
+		right 20%
+		top 40%
+		z-index 1
+		
+		img
+			
+			max-width 240px
+			margin-bottom 4em
+		
+		h2
+			color white
+			font-family 'Roboto Slab', serif
+			font-weight 100
+			
+			.estilo
+				color amarillo
+				font-style italic
+		
+		a
+			color white
+			font-family 'Roboto Slab', serif
+			font-weight 100
+			font-size 1.4em
+			
+		a:hover
+			text-decoration underline
+			
+	.cotizador
+		margin-top 3em
+		position absolute
+		text-align center
+		width 95%
+		z-index 1
+		
+		h2
+			color white
+			font-family 'Roboto Slab', serif
+			font-weight 100
+			font-size 3.5em
+			
+		p
+			color white
+			font-family 'Roboto Slab', serif
+			font-weight 300
+			font-size 0.9em
+			
+		select
+			background white
+			font-family 'Roboto Slab', serif
+			font-size 0.9em
+			margin-bottom 1em
+			opacity 0.5
+			
+			option
+				text-align center
+			
+		input
+			background white
+			font-family 'Roboto Slab', serif
+			font-size 0.9em
+			margin-bottom 1em
+			text-align center
+			opacity 0.5
+			
+		input:focus
+			background white
+			opacity 0.8
+			
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color: #000000;
+		}
+
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color: #000000;
+		}
+
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color: #000000;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    color: #000000;
+		}
+		
+		.enviar
+			
+			input	
+				background amarillo
+				border 5px solid amarillo
+				width 100%
+				
+			input:hover
+				background amarillo
+				border 5px solid amarillo
+				color gris
+				opacity 0.9
+			
+	// CONTENIDO //
+		
+	.contenido_centrado
+
+		text-align center
+		margin-top 3em
+		
+		h2
+			font-family 'Roboto Slab', serif
+			font-weight 100
+			font-size 3.5em
+			
+		h3
+			font-family 'Roboto Slab', serif
+			font-weight 300
+			font-size 1.5em
+		
+		.textos
+			margin-top 1em
+			margin-bottom 2em
+
+			p
+				font-family 'Roboto Slab', serif
+				font-weight 300
+				font-size 0.9em
+				
+		.textos_2
+			margin-top 1em
+			margin-bottom 2em
+
+			p
+				font-family 'Roboto Slab', serif
+				font-weight 300
+				font-size 0.9em
+				
+		.tres_columnas
+			margin-top 3em
+			margin-bottom 4em
+			
+			hr
+				border-top 0.4em solid amarillo
+				margin-bottom 2em
+				
+			p
+				font-family 'Roboto Slab', serif
+				font-weight 300
+				font-size 0.9em
+				text-align justify
+				
+			ul
+				
+				li
+					color amarillo
+					line-height 0.5em
+					list-style square
+					
+					p
+						color gris
+						line-height 0.5em
+						
+			img
+				box-shadow 0 0 1em gris_claro
+				
+			.areas
+				margin-bottom 2.5em
+				
+		.mision_vision
+			margin-top 2em
+			text-align justify
+			
+			h4
+				font-family 'Roboto Slab', serif
+				font-weight 700
+				font-size 1.2em
+				
+			p
+				font-family 'Roboto Slab', serif
+				font-weight 300
+				font-size 0.8em
+				
+			hr
+				border-top 0.4em solid amarillo
+				margin-bottom 1.5em
+				width 14em
+				
+			.valor
+				margin-bottom 5em
+				
+		.promocion
+			background-color amarillo
+			border-radius 50%
+			margin-top 2em
+			margin-bottom 4em
+			height 290px
+			width 290px
+			
+			img
+				max-width 500px
+					
+			.fecha
+				color gris
+				font-family 'Roboto Slab', serif
+				padding 2em
+				text-align center
+				
+				.year
+					padding-top 1.2em
+					font-size 2em
+					font-weight 700
+					line-height 1em
+					
+				.month
+					font-size 1.3em
+					font-weight 400
+				
+		.entrega
+			// background-color amarillo
+			// border-radius 50%
+			margin-top 2em
+			margin-bottom 4em
+			// height 290px
+			// width 290px
+			
+			img
+				max-width 500px
+					
+		.mapa
+			margin-top 2em
+			margin-bottom 3em
+			
+			iframe
+				box-shadow 0 0 1em gris_claro
+				
+		// DEPARTAMENTOS //
+				
+		.modulo_departamentos
+			
+			hr
+				border-top 0.2em solid amarillo
+				margin-bottom 1.5em
+				
+			
+			text-align justify
+			
+			h3
+				font-weight 700
+				
+			p
+				font-family 'Roboto Slab', serif
+				font-weight 300
+				font-size 0.8em
+				
+			.departamentos
+				background url("../img/background_gris.png")
+				border-bottom 1px solid gris_claro
+				
+				ul
+					list-style-type none
+					
+					li
+				
+						a
+							border-top 10px solid gris
+							color gris_claro_numero
+							font-family 'Roboto Slab', serif
+							font-weight 300
+							font-size 1.5em
+							line-height 1.2em
+							
+							span
+								font-size 2.4em
+								font-weight 700
+								line-height 1em
+								
+						a:hover
+							
+							border-top 10px solid gris
+							color gris
+							
+						a:focus
+							
+							border-top 10px solid gris
+					
+			.datos
+				font-family 'Roboto Slab', serif
+				text-align center
+				
+				.area_departamento
+					font-weight 500
+					font-size 1em
+					text-align center
+					line-height 0.1em
+					
+				ul
+					list-style-type none
+					line-height 3em
+					
+					li
+					
+						a
+							color gris
+						
+						.precio
+							background-color gris_claro
+							background url("../img/background_gris.png")
+							display none
+							font-size 1em
+							padding 1em 3em
+							
+							
+						.descuento
+							background-color amarillo
+							font-size 0.8em
+							padding 1em 1.9em
+							
+						.descuento:hover
+							background-color verde
+							color white
+							
+		.banner_aguila
+			
+			img
+
+				text-align center
+													
+		hr
+					
+// FOOTER //
+
+footer
+	
+	.iconos
+		color amarillo
+		display inline-block
+		font-size 2.4em
+		margin-right 0.9em
+				
+	.datos_footer
+		margin 2em auto 1em auto
+				
+		ul
+			margin 0
+			
+			li
+				color gris
+				display inline-block
+				font-family 'Roboto Slab', serif
+				font-size 0.7em
+				font-weight 300
+				list-style-type none
+				margin-left 1em
+				margin-right 1em
+				
+				a
+					color gris
+					display inline-block
+					
+				a:hover
+					color gris_claro_numero
+			
+		.logo_footer
+			position relative
+			top -0.7em
+			
+			img
+				max-width 220px
+				
+		.footer_mobile
+			
+			text-align center
+			
+			ul
+				
+				li
+	
+					line-height 4em
+	
+// SLIDER //
+
+.rslides
+	position relative
+	list-style none
+	overflow hidden
+	width 100%
+	padding 0
+	margin 0
+	z-index 0
+
+	li
+		-webkit-backface-visibility hidden
+		position absolute
+		display none
+		width 100%
+		left 0
+		top 0
+
+	li:first-child
+		position relative
+		display block
+		float left
+
+	img
+		display block
+		height auto
+		float left
+		width 100%
+		border 0
+		
+
+
+
